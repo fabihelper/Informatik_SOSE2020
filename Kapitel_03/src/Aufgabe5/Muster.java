@@ -10,6 +10,7 @@ public class Muster
 	{
 		JFrame mus = new JFrame("Muster");
 		Zeichnung z = new Zeichnung();
+
 		mus.setContentPane(z);
 		mus.setBackground(Color.white);
 		

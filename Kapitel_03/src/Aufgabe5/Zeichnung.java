@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Zeichnung extends JPanel
 {
-	int hoehe = 40*10;
+	int hoehe = 8*10;
 
 	
 	public void paint(Graphics g)
@@ -16,12 +16,25 @@ public class Zeichnung extends JPanel
 		
 	            for (int j = 10; j <= i; j=j+10) { 
 	            	
-	            	g.setColor(Color.BLUE);
+	            	//*Mit Sternen
+	            	/*g.setColor(Color.BLUE);
 	            	g.drawString("+ ", i+510, j); 
 	            	g.drawString("+ ", i*-1+510, j);
 	            	g.setColor(Color.RED);
 	            	g.drawString("* ", j+500, i); 
-	            	g.drawString("* ", j*-1+520, i);
+	            	g.drawString("* ", j*-1+520, i);*/
+	            	
+	            	// Mit Kreisen
+	            	  
+	            	g.setColor(Color.BLUE);
+	            	g.drawOval(i+510 , j-10, 10, 10);
+	            	g.drawOval(i*-1+510, j-10, 10, 10);
+
+	            	g.setColor(Color.RED);
+	            	g.drawOval(j+500, i-10 , 10, 10);
+
+	            	g.drawOval(j*-1+520, i-10, 10, 10);
+	            	 
 
 
 	            } 
