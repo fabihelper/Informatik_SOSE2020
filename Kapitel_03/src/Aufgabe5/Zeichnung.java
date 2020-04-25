@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Zeichnung extends JPanel
 {
-	int hoehe = 8*10;
+	int hoehe = 50*10;
 
 	
 	public void paint(Graphics g)
@@ -27,13 +27,13 @@ public class Zeichnung extends JPanel
 	            	// Mit Kreisen
 	            	  
 	            	g.setColor(Color.BLUE);
-	            	g.drawOval(i+510 , j-10, 10, 10);
-	            	g.drawOval(i*-1+510, j-10, 10, 10);
+	            	g.drawOval(i+470 , j-10, 10, 10);
+	            	g.drawOval(i*-1+490, j-10, 10, 10);
 
 	            	g.setColor(Color.RED);
-	            	g.drawOval(j+500, i-10 , 10, 10);
+	            	g.drawOval(j+470, i-10 , 10, 10);
 
-	            	g.drawOval(j*-1+520, i-10, 10, 10);
+	            	g.drawOval(j*-1+490, i-10, 10, 10);
 	            	 
 
 
