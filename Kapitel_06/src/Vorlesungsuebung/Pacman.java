@@ -12,7 +12,7 @@ public class Pacman extends JPanel
 		Color dark_green = new Color(69,139,0);
 		
 		g2.setColor(dark_green);
-		BasicStroke pen = new BasicStroke(8f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
+		BasicStroke pen = new BasicStroke(10f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
 		g2.setStroke(pen);
 		
 		Arc2D.Float pac = new Arc2D.Float(100,100,500,500,390,305, Arc2D.PIE);
